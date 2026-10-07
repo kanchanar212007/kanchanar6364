@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanchana R — Software Engineer & Creative Technologist</title>
+  <meta name="description" content="Personal editorial portfolio of Kanchana R — Software Engineer, Full-Stack Developer, and Creative Technologist specializing in modern web systems, AI interfaces, and human-centric design.">
+  <meta name="keywords" content="Kanchana R, Software Engineer, Portfolio, Full-Stack Developer, AI, Creative Technologist, Web Development, Design Systems">
+  <meta name="author" content="Kanchana R">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Kanchana R — Software Engineer & Creative Technologist">
+  <meta property="og:description" content="Editorial portfolio combining high-craft software engineering with refined minimalist aesthetics.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif' fill='%23C85A32'>K</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress"></div>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="editorial-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Kanchana R Home">
+        <span class="logo-name">Kanchana R</span>
+        <span class="logo-role">/ Portfolio &bull; Vol. 26</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link"><span class="nav-num">01</span> About</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-num">02</span> Skills</a></li>
+          <li><a href="#education" class="nav-link"><span class="nav-num">03</span> Education</a></li>
+          <li><a href="#projects" class="nav-link"><span class="nav-num">04</span> Projects</a></li>
+          <li><a href="#experience" class="nav-link"><span class="nav-num">05</span> Experience</a></li>
+          <li><a href="#services" class="nav-link"><span class="nav-num">06</span> Services</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-num">07</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Meta & Actions -->
+      <div class="header-meta">
+        <div class="time-badge" id="live-time-badge">
+          <span class="status-dot"></span>
+          <span id="live-clock">12:30 PM IST</span>
+        </div>
+
+        <div class="social-links-header">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <button class="chat-trigger-btn" id="open-chat-btn" aria-label="Open AI Assistant">
+          <i class="fa-solid fa-sparkles"></i>
+          <span>Ask AI</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+      <div class="drawer-header">
+        <span class="drawer-label">MENU / INDEX</span>
+        <button class="drawer-close-btn" id="close-drawer-btn" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mob-link"><span>00</span> Home</a></li>
+        <li><a href="#about" class="mob-link"><span>01</span> About Me</a></li>
+        <li><a href="#skills" class="mob-link"><span>02</span> Technical Skills</a></li>
+        <li><a href="#education" class="mob-link"><span>03</span> Education & Timeline</a></li>
+        <li><a href="#projects" class="mob-link"><span>04</span> Selected Projects</a></li>
+        <li><a href="#experience" class="mob-link"><span>05</span> Experience & Honours</a></li>
+        <li><a href="#services" class="mob-link"><span>06</span> Services & Offerings</a></li>
+        <li><a href="#testimonials" class="mob-link"><span>07</span> Testimonials</a></li>
+        <li><a href="#contact" class="mob-link"><span>08</span> Inquiries & Contact</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <p class="drawer-status"><span class="status-dot"></span> Available for internships & full-time roles</p>
+        <div class="drawer-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="mailto:kanchana.dev@example.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+
+    <!-- SECTION 00: HERO -->
+    <section class="hero-section" id="hero">
+      <div class="hero-grid-container">
+        
+        <!-- Left Editorial Meta & Headline -->
+        <div class="hero-left-column">
+          <div class="editorial-tag-pill">
+            <span class="pill-dot"></span>
+            <span class="pill-text">EDITION 2026 &bull; SOFTWARE ENGINEER & DESIGNER</span>
+          </div>
+
+          <h1 class="hero-display-title">
+            Crafting <span class="serif-italic accent-text">resilient</span> software with an <span class="serif-italic">editorial</span> soul.
+          </h1>
+
+          <p class="hero-lead-paragraph">
+            Hi, I’m <strong>Kanchana R</strong> — a software engineering student and creative technologist bridging high-performance backend systems with bespoke, elegant user interfaces.
+          </p>
+
+          <div class="hero-action-row">
+            <a href="#projects" class="editorial-btn primary-btn">
+              <span>Explore Works</span>
+              <i class="fa-solid fa-arrow-down-right"></i>
+            </a>
+            <a href="#contact" class="editorial-btn secondary-btn">
+              <span>Get in Touch</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-meta-stats">
+            <div class="stat-box">
+              <span class="stat-value">15+</span>
+              <span class="stat-caption">Projects Engineered</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-box">
+              <span class="stat-value">99.8%</span>
+              <span class="stat-caption">Code Craft Quality</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-box">
+              <span class="stat-value">Open</span>
+              <span class="stat-caption">For Collaborations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Editorial Block -->
+        <div class="hero-right-column">
+          <div class="hero-portrait-frame">
+            <div class="portrait-inner-wrapper">
+              <img src="assets/images/portrait.jpg" alt="Portrait of Kanchana R" class="hero-portrait-img" loading="eager">
+              <div class="portrait-overlay-caption">
+                <span class="caption-label">FIG. 01 &mdash; KANCHANA R</span>
+                <span class="caption-sub">Software Engineer &bull; Tech + Creativity</span>
+              </div>
+            </div>
+            <!-- Decorative Editorial Badge -->
+            <div class="editorial-floating-seal">
+              <svg viewBox="0 0 100 100" class="circular-seal-svg">
+                <path id="seal-curve" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent"/>
+                <text class="seal-text">
+                  <textPath href="#seal-curve">
+                    &bull; KANCHANA R &bull; SOFTWARE CRAFT &bull; INNOVATION &bull;
+                  </textPath>
+                </text>
+              </svg>
+              <div class="seal-center-icon"><i class="fa-solid fa-code"></i></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Marquee Ticker -->
+      <div class="hero-marquee-band">
+        <div class="marquee-track">
+          <span>FULL-STACK ARCHITECTURE</span>
+          <span class="marquee-sep">&bull;</span>
+          <span>ARTIFICIAL INTELLIGENCE</span>
+          <span class="marquee-sep">&bull;</span>
+          <span>EDITORIAL DESIGN SYSTEMS</span>
+          <span class="marquee-sep">&bull;</span>
+          <span>HIGH-PERFORMANCE WEB APPS</span>
+          <span class="marquee-sep">&bull;</span>
+          <span>DISTRIBUTED SYSTEMS</span>
+          <span class="marquee-sep">&bull;</span>
+          <span>FULL-STACK ARCHITECTURE</span>
+          <span class="marquee-sep">&bull;</span>
+          <span>ARTIFICIAL INTELLIGENCE</span>
+          <span class="marquee-sep">&bull;</span>
+          <span>EDITORIAL DESIGN SYSTEMS</span>
+          <span class="marquee-sep">&bull;</span>
+          <span>HIGH-PERFORMANCE WEB APPS</span>
+          <span class="marquee-sep">&bull;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 01: ABOUT ME -->
+    <section class="editorial-section about-section" id="about">
+      <div class="section-header-bar">
+        <div class="section-number">01 // ESSENCE</div>
+        <h2 class="section-title">About Me</h2>
+        <span class="section-subtitle">Biography &bull; Philosophy &bull; Foundation</span>
+      </div>
+
+      <div class="about-grid">
+        <!-- Editorial Manifesto Quote -->
+        <div class="about-manifesto-card">
+          <span class="manifesto-lead-label">THE MANIFESTO</span>
+          <blockquote class="manifesto-quote">
+            "I believe code should possess both architectural robustness and aesthetic poise. Software isn’t merely functional syntax — it is a modern medium of human expression."
+          </blockquote>
+          <div class="signature-block">
+            <span class="signature-name">Kanchana R</span>
+            <span class="signature-title">Computer Science Engineer &bull; Creative Developer</span>
+          </div>
+        </div>
+
+        <!-- Detailed Bio Content -->
+        <div class="about-details-content">
+          <h3 class="about-subhead">Bridging rigorous engineering with intentional design craft.</h3>
+          <p class="about-p">
+            I am a software engineer dedicated to building high-quality digital experiences. With a rigorous background in Computer Science, my focus spans <strong>distributed systems, responsive frontend architectures, machine learning integration</strong>, and <strong>bespoke UI/UX design systems</strong>.
+          </p>
+          <p class="about-p">
+            My engineering philosophy centers on clean abstractions, maintainability, and micro-interactions that elevate ordinary user flows into memorable digital encounters. Whether architecting cloud databases or refining typographic hierarchies, I treat every layer of the stack with deliberate care.
+          </p>
+
+          <div class="about-specs-grid">
+            <div class="spec-item">
+              <span class="spec-label">LOCATION</span>
+              <span class="spec-value">Bangalore / Chennai, India</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">SPECIALIZATION</span>
+              <span class="spec-value">Full Stack & AI Systems</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">EDUCATION</span>
+              <span class="spec-value">B.E. Computer Science & Eng.</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">AVAILABILITY</span>
+              <span class="spec-value accent-highlight">Immediate / Open for Opportunities</span>
+            </div>
+          </div>
+
+          <div class="about-cta-row">
+            <a href="assets/images/portrait.jpg" download="Kanchana_R_Resume.jpg" class="editorial-btn secondary-btn" id="resume-download-btn">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Curriculum Vitae</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: SKILLS -->
+    <section class="editorial-section skills-section" id="skills">
+      <div class="section-header-bar">
+        <div class="section-number">02 // MASTERY</div>
+        <h2 class="section-title">Technical Expertise</h2>
+        <span class="section-subtitle">Languages &bull; Frameworks &bull; Methodologies</span>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="skills-filter-nav" role="tablist">
+        <button class="filter-tab active" data-skill-filter="all">All Disciplines</button>
+        <button class="filter-tab" data-skill-filter="frontend">Frontend & UI</button>
+        <button class="filter-tab" data-skill-filter="backend">Backend & DB</button>
+        <button class="filter-tab" data-skill-filter="ai">AI & Data Science</button>
+        <button class="filter-tab" data-skill-filter="devops">DevOps & Tools</button>
+      </div>
+
+      <div class="skills-editorial-grid">
+        
+        <!-- Skill Group 1: Frontend & UI -->
+        <div class="skill-category-card" data-category="frontend">
+          <div class="category-header">
+            <span class="cat-idx">A.01</span>
+            <h3 class="cat-title">Frontend & Design Systems</h3>
+          </div>
+          <p class="cat-description">Crafting pixel-perfect, accessible, and high-performance interfaces with modern web standards.</p>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5 / Semantic Web</span>
+            <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> Modern CSS & SASS</span>
+            <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript (ESNext)</span>
+            <span class="skill-pill"><i class="fa-brands fa-react"></i> React.js / Next.js</span>
+            <span class="skill-pill"><i class="fa-solid fa-code"></i> TypeScript</span>
+            <span class="skill-pill"><i class="fa-brands fa-figma"></i> Figma & UI Systems</span>
+            <span class="skill-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Responsive & A11y</span>
+          </div>
+          <div class="skill-meter-wrap">
+            <div class="meter-info">
+              <span>Frontend Craft Proficiency</span>
+              <span>95%</span>
+            </div>
+            <div class="meter-track"><div class="meter-fill" style="width: 95%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Skill Group 2: Backend & Systems -->
+        <div class="skill-category-card" data-category="backend">
+          <div class="category-header">
+            <span class="cat-idx">A.02</span>
+            <h3 class="cat-title">Backend Architecture & APIs</h3>
+          </div>
+          <p class="cat-description">Designing scalable server architectures, resilient RESTful/GraphQL APIs, and transactional databases.</p>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fa-brands fa-node-js"></i> Node.js & Express</span>
+            <span class="skill-pill"><i class="fa-brands fa-python"></i> Python / FastAPI / Django</span>
+            <span class="skill-pill"><i class="fa-brands fa-java"></i> Java & Spring Boot</span>
+            <span class="skill-pill"><i class="fa-solid fa-database"></i> PostgreSQL & MySQL</span>
+            <span class="skill-pill"><i class="fa-solid fa-leaf"></i> MongoDB & Redis</span>
+            <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> REST & GraphQL APIs</span>
+            <span class="skill-pill"><i class="fa-solid fa-shield-halved"></i> Auth & Security</span>
+          </div>
+          <div class="skill-meter-wrap">
+            <div class="meter-info">
+              <span>Backend Architecture Proficiency</span>
+              <span>90%</span>
+            </div>
+            <div class="meter-track"><div class="meter-fill" style="width: 90%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Skill Group 3: AI & Machine Learning -->
+        <div class="skill-category-card" data-category="ai">
+          <div class="category-header">
+            <span class="cat-idx">A.03</span>
+            <h3 class="cat-title">AI, ML & Intelligent Agents</h3>
+          </div>
+          <p class="cat-description">Leveraging predictive models, large language models (LLMs), prompt engineering, and intelligent pipelines.</p>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fa-solid fa-brain"></i> Machine Learning Core</span>
+            <span class="skill-pill"><i class="fa-solid fa-robot"></i> LLM Orchestration & RAG</span>
+            <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> PyTorch & TensorFlow</span>
+            <span class="skill-pill"><i class="fa-solid fa-table"></i> Pandas, NumPy & SciPy</span>
+            <span class="skill-pill"><i class="fa-solid fa-microchip"></i> LangChain & HuggingFace</span>
+            <span class="skill-pill"><i class="fa-solid fa-comment-dots"></i> NLP & Semantic Search</span>
+          </div>
+          <div class="skill-meter-wrap">
+            <div class="meter-info">
+              <span>AI Integration Proficiency</span>
+              <span>88%</span>
+            </div>
+            <div class="meter-track"><div class="meter-fill" style="width: 88%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Skill Group 4: DevOps & Tools -->
+        <div class="skill-category-card" data-category="devops">
+          <div class="category-header">
+            <span class="cat-idx">A.04</span>
+            <h3 class="cat-title">DevOps, Cloud & Tooling</h3>
+          </div>
+          <p class="cat-description">Continuous integration, containerization, cloud deployment, and automated testing pipelines.</p>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git & GitHub Workflows</span>
+            <span class="skill-pill"><i class="fa-brands fa-docker"></i> Docker & Containerization</span>
+            <span class="skill-pill"><i class="fa-brands fa-aws"></i> AWS Cloud & Vercel</span>
+            <span class="skill-pill"><i class="fa-brands fa-linux"></i> Linux & Bash Scripting</span>
+            <span class="skill-pill"><i class="fa-solid fa-vial"></i> Jest & Unit Testing</span>
+            <span class="skill-pill"><i class="fa-solid fa-gears"></i> CI/CD Pipelines</span>
+          </div>
+          <div class="skill-meter-wrap">
+            <div class="meter-info">
+              <span>DevOps & Infrastructure</span>
+              <span>85%</span>
+            </div>
+            <div class="meter-track"><div class="meter-fill" style="width: 85%;"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 03: EDUCATION & TIMELINE -->
+    <section class="editorial-section education-section" id="education">
+      <div class="section-header-bar">
+        <div class="section-number">03 // CHRONOLOGY</div>
+        <h2 class="section-title">Education & Milestones</h2>
+        <span class="section-subtitle">Academic Pedigree &bull; Certifications &bull; Growth</span>
+      </div>
+
+      <div class="education-editorial-layout">
+        <!-- Left Summary Card -->
+        <div class="edu-left-highlight">
+          <div class="highlight-badge">ACADEMIC EXCELLENCE</div>
+          <h3 class="highlight-title">Solid Computer Science Foundation</h3>
+          <p class="highlight-desc">
+            A balanced curriculum combining mathematical foundations, algorithms, systems design, software architecture, and practical full-stack project execution.
+          </p>
+          <div class="gpa-card">
+            <span class="gpa-num">9.2<small>/10</small></span>
+            <span class="gpa-text">Cumulative Grade Point Average</span>
+          </div>
+          <div class="honors-list">
+            <div class="honor-item">
+              <i class="fa-solid fa-award"></i>
+              <span>Dean’s Merit Scholar for Academic Distinction</span>
+            </div>
+            <div class="honor-item">
+              <i class="fa-solid fa-trophy"></i>
+              <span>1st Place — National Hackathon & Algorithmic Sprint</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Timeline -->
+        <div class="edu-timeline-wrapper">
+          
+          <div class="timeline-entry">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="entry-meta">
+                <span class="entry-period">2022 &mdash; 2026 (Expected)</span>
+                <span class="entry-type">Undergraduate Degree</span>
+              </div>
+              <h4 class="entry-title">Bachelor of Engineering in Computer Science</h4>
+              <span class="entry-institution">Department of Computer Science & Engineering</span>
+              <p class="entry-details">
+                Key coursework: Data Structures & Algorithms, Distributed Operating Systems, Database Management, Object-Oriented Software Design, Machine Learning, Computer Networks, and Cloud Computing.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-entry">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="entry-meta">
+                <span class="entry-period">2024</span>
+                <span class="entry-type">Professional Certification</span>
+              </div>
+              <h4 class="entry-title">Full Stack Cloud & Microservices Specialization</h4>
+              <span class="entry-institution">DeepLearning.AI / AWS Certified Partner</span>
+              <p class="entry-details">
+                Hands-on specialization focusing on serverless cloud microservices, containerization with Docker, Kubernetes orchestration, and event-driven architectures.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-entry">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="entry-meta">
+                <span class="entry-period">2020 &mdash; 2022</span>
+                <span class="entry-type">Higher Secondary</span>
+              </div>
+              <h4 class="entry-title">Higher Secondary Education (PCMC)</h4>
+              <span class="entry-institution">Physics, Chemistry, Mathematics & Computer Science</span>
+              <p class="entry-details">
+                Graduated with 96.4% distinction. Led the High School Coding Club and instituted algorithmic problem-solving workshops for junior students.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: PROJECTS -->
+    <section class="editorial-section projects-section" id="projects">
+      <div class="section-header-bar">
+        <div class="section-number">04 // SELECTED WORKS</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <span class="section-subtitle">Architectural Case Studies &bull; Production Systems</span>
+      </div>
+
+      <!-- Project Filter Bar -->
+      <div class="projects-filter-bar">
+        <button class="proj-filter-btn active" data-filter="all">All Projects (03)</button>
+        <button class="proj-filter-btn" data-filter="ai">AI & Systems</button>
+        <button class="proj-filter-btn" data-filter="web">Full-Stack Web</button>
+        <button class="proj-filter-btn" data-filter="design">Design & Editorial</button>
+      </div>
+
+      <div class="projects-showcase-grid">
+        
+        <!-- Project 1: SYNTHESIS AI Platform -->
+        <article class="project-case-card" data-category="ai web">
+          <div class="case-image-wrapper">
+            <img src="assets/images/project-1.jpg" alt="Synthesis AI Generative Studio project preview" class="case-img" loading="lazy">
+            <div class="case-badge-pill">CASE NO. 01</div>
+          </div>
+          <div class="case-content">
+            <div class="case-meta">
+              <span class="case-tag">GENERATIVE AI &bull; NEXT.JS &bull; FASTAPI</span>
+              <span class="case-year">2025</span>
+            </div>
+            <h3 class="case-title">Synthesis — AI Generative Design Engine</h3>
+            <p class="case-summary">
+              An intelligent parametric design studio that leverages diffusion models and vector geometry algorithms to generate production-ready 3D architectural shapes in real time.
+            </p>
+            <div class="case-tech-stack">
+              <span>React 19</span>
+              <span>FastAPI</span>
+              <span>PyTorch</span>
+              <span>Three.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="case-actions">
+              <button class="case-action-btn view-modal-btn" data-project-id="1">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Case Study
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="case-link-btn" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+              <a href="#contact" class="case-link-btn" aria-label="Request Live Demo">
+                <i class="fa-solid fa-play"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Archi Estudio 3D -->
+        <article class="project-case-card" data-category="web design">
+          <div class="case-image-wrapper">
+            <img src="assets/images/project-2.jpg" alt="Archi Estudio 3D project preview" class="case-img" loading="lazy">
+            <div class="case-badge-pill">CASE NO. 02</div>
+          </div>
+          <div class="case-content">
+            <div class="case-meta">
+              <span class="case-tag">FULL-STACK &bull; WEBGL &bull; COMMERCE</span>
+              <span class="case-year">2025</span>
+            </div>
+            <h3 class="case-title">Archi Estudio — Luxury Spatial Platform</h3>
+            <p class="case-summary">
+              A high-end editorial web experience and spatial showroom for architectural visualization, featuring smooth WebGL transitions, responsive cataloging, and sub-second page loads.
+            </p>
+            <div class="case-tech-stack">
+              <span>TypeScript</span>
+              <span>WebGL / Three.js</span>
+              <span>Node.js</span>
+              <span>Tailored CSS</span>
+              <span>Vercel</span>
+            </div>
+            <div class="case-actions">
+              <button class="case-action-btn view-modal-btn" data-project-id="2">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Case Study
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="case-link-btn" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+              <a href="#contact" class="case-link-btn" aria-label="Request Live Demo">
+                <i class="fa-solid fa-play"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Algorithmic Engine -->
+        <article class="project-case-card" data-category="ai web">
+          <div class="case-image-wrapper">
+            <img src="assets/images/project-3.jpg" alt="Algorithmic Engine analytics platform preview" class="case-img" loading="lazy">
+            <div class="case-badge-pill">CASE NO. 03</div>
+          </div>
+          <div class="case-content">
+            <div class="case-meta">
+              <span class="case-tag">DISTRIBUTED SYSTEMS &bull; TIME SERIES &bull; D3.JS</span>
+              <span class="case-year">2024</span>
+            </div>
+            <h3 class="case-title">Nexus — High-Throughput Analytics Engine</h3>
+            <p class="case-summary">
+              A distributed telemetry dashboard and algorithmic engine processing over 50,000 real-time events per second with sub-50ms latency graphs and predictive anomaly detection.
+            </p>
+            <div class="case-tech-stack">
+              <span>Go / Golang</span>
+              <span>Python Data Engine</span>
+              <span>D3.js</span>
+              <span>Redis Cluster</span>
+              <span>Docker</span>
+            </div>
+            <div class="case-actions">
+              <button class="case-action-btn view-modal-btn" data-project-id="3">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Case Study
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="case-link-btn" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+              <a href="#contact" class="case-link-btn" aria-label="Request Live Demo">
+                <i class="fa-solid fa-play"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION 04B: VIDEO & INTERACTIVE REEL -->
+    <section class="editorial-section video-showcase-section" id="reel">
+      <div class="section-header-bar">
+        <div class="section-number">04.5 // INTERACTIVE DEMO</div>
+        <h2 class="section-title">System Walkthrough & Video Reel</h2>
+        <span class="section-subtitle">Live Demonstration &bull; Architectural Walkthrough</span>
+      </div>
+
+      <div class="video-showcase-card">
+        <!-- Video Player Frame -->
+        <div class="video-frame-container">
+          <div class="video-wrapper" id="video-wrapper">
+            <iframe 
+              id="portfolio-video-player"
+              src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1&rel=0&modestbranding=1" 
+              title="System Architecture & Demo Video Walkthrough" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen
+              class="embedded-video-player">
+            </iframe>
+          </div>
+          <div class="video-overlay-info">
+            <div class="reel-badge"><i class="fa-solid fa-circle-play"></i> ARCHITECTURE WALKTHROUGH REEL</div>
+            <p class="reel-caption">Synthesis AI Platform &bull; Sub-second diffusion mesh generation pipeline demonstration</p>
+          </div>
+        </div>
+
+        <!-- Video Selection Tabs -->
+        <div class="video-playlist-bar">
+          <button class="video-tab-btn active" data-video-url="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1&rel=0" data-caption="Synthesis AI Platform &bull; Sub-second diffusion mesh generation pipeline demonstration">
+            <i class="fa-solid fa-layer-group"></i>
+            <div>
+              <span class="video-tab-title">01. Synthesis AI Engine</span>
+              <span class="video-tab-sub">Parametric 3D Generation Demo (3:14)</span>
+            </div>
+          </button>
+
+          <button class="video-tab-btn" data-video-url="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1&rel=0" data-caption="Archi Estudio 3D &bull; 60FPS WebGL spatial showroom & Level-Of-Detail loading">
+            <i class="fa-solid fa-cube"></i>
+            <div>
+              <span class="video-tab-title">02. WebGL Spatial Showroom</span>
+              <span class="video-tab-sub">Interactive 3D Walkthrough (2:40)</span>
+            </div>
+          </button>
+
+          <button class="video-tab-btn" data-video-url="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1&rel=0" data-caption="Nexus Telemetry Engine &bull; High-throughput ingestion & anomaly detection">
+            <i class="fa-solid fa-chart-line"></i>
+            <div>
+              <span class="video-tab-title">03. Nexus Distributed Engine</span>
+              <span class="video-tab-sub">50K req/s Real-time Ingestion (4:05)</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: EXPERIENCE & ACHIEVEMENTS -->
+    <section class="editorial-section experience-section" id="experience">
+      <div class="section-header-bar">
+        <div class="section-number">05 // TRAJECTORY</div>
+        <h2 class="section-title">Experience & Achievements</h2>
+        <span class="section-subtitle">Roles &bull; Hackathons &bull; Leadership</span>
+      </div>
+
+      <div class="experience-editorial-grid">
+        
+        <!-- Experience Column -->
+        <div class="exp-column">
+          <h3 class="exp-column-heading"><i class="fa-solid fa-briefcase"></i> Professional Experience</h3>
+          
+          <div class="exp-item-card">
+            <div class="exp-item-header">
+              <div>
+                <h4 class="exp-role">Software Engineering Intern</h4>
+                <span class="exp-company">Vanguard Tech Labs</span>
+              </div>
+              <span class="exp-dates">Jun 2025 &mdash; Aug 2025</span>
+            </div>
+            <ul class="exp-points">
+              <li>Architected and deployed microservices reducing API payload latency by 34%.</li>
+              <li>Engineered an automated data pipeline handling 2M+ records daily with zero data loss.</li>
+              <li>Authored comprehensive test suites raising overall codebase test coverage to 92%.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item-card">
+            <div class="exp-item-header">
+              <div>
+                <h4 class="exp-role">Lead Full-Stack Developer</h4>
+                <span class="exp-company">University Innovation Hub</span>
+              </div>
+              <span class="exp-dates">Aug 2024 &mdash; Present</span>
+            </div>
+            <ul class="exp-points">
+              <li>Directing a team of 6 engineers building an open-source campus resource portal.</li>
+              <li>Implemented role-based JWT authentication, caching strategies, and CDN asset delivery.</li>
+              <li>Organized 12+ peer-led workshops on Git workflows, TypeScript, and modern CSS architecture.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Achievements Column -->
+        <div class="exp-column">
+          <h3 class="exp-column-heading"><i class="fa-solid fa-award"></i> Key Achievements & Awards</h3>
+          
+          <div class="achievement-card">
+            <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="ach-info">
+              <span class="ach-year">2025</span>
+              <h4 class="ach-title">Winner &bull; Smart City AI Hackathon</h4>
+              <p class="ach-desc">Awarded 1st place out of 140+ teams for developing an automated real-time urban traffic routing algorithm utilizing computer vision.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="ach-icon"><i class="fa-solid fa-newspaper"></i></div>
+            <div class="ach-info">
+              <span class="ach-year">2024</span>
+              <h4 class="ach-title">Research Paper Publication</h4>
+              <p class="ach-desc">Co-authored research paper on <em>"Optimized Memory Allocation in Edge Computing Devices"</em> presented at the National Computing Conference.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="ach-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="ach-info">
+              <span class="ach-year">2024</span>
+              <h4 class="ach-title">Top 1% Global LeetCode / Algorithmic Ranking</h4>
+              <p class="ach-desc">Solved 500+ algorithmic problems across dynamic programming, graph theory, trees, and advanced data structures.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 06: SERVICES -->
+    <section class="editorial-section services-section" id="services">
+      <div class="section-header-bar">
+        <div class="section-number">06 // OFFERINGS</div>
+        <h2 class="section-title">Services & Capabilities</h2>
+        <span class="section-subtitle">How I Can Deliver Value To Your Team</span>
+      </div>
+
+      <div class="services-editorial-grid">
+        
+        <div class="service-card">
+          <span class="service-index">01</span>
+          <div class="service-icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3 class="service-name">Full-Stack Web Development</h3>
+          <p class="service-desc">
+            End-to-end web applications engineered from scratch. High performance, clean architecture, responsive layouts, and robust backend integrations.
+          </p>
+          <ul class="service-list">
+            <li>Single Page & Server-Rendered Apps</li>
+            <li>RESTful & GraphQL API Engineering</li>
+            <li>Database Design & Optimization</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-index">02</span>
+          <div class="service-icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 class="service-name">Bespoke UI/UX & Design Systems</h3>
+          <p class="service-desc">
+            Editorial, luxury visual identities and scalable design token systems that marry typography, whitespace, and micro-interactions into a unified brand experience.
+          </p>
+          <ul class="service-list">
+            <li>Design Tokens & Component Libraries</li>
+            <li>Micro-interactions & Smooth Motion</li>
+            <li>Accessible (WCAG 2.1 AA) Compliance</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-index">03</span>
+          <div class="service-icon-box"><i class="fa-solid fa-brain"></i></div>
+          <h3 class="service-name">AI Integration & Intelligent Tools</h3>
+          <p class="service-desc">
+            Bridging state-of-the-art AI models into practical business workflows. Custom chatbots, RAG pipelines, and automated generative tools.
+          </p>
+          <ul class="service-list">
+            <li>LLM Agents & Context Pipelines</li>
+            <li>Prompt Engineering & Embeddings</li>
+            <li>Predictive Data Dashboards</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-index">04</span>
+          <div class="service-icon-box"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3 class="service-name">Performance & Code Auditing</h3>
+          <p class="service-desc">
+            Deep-dive diagnostic reviews of existing web architectures to eliminate bottlenecks, improve Core Web Vitals, and optimize security posture.
+          </p>
+          <ul class="service-list">
+            <li>Lighthouse 95+ Score Tuning</li>
+            <li>Refactoring & Modularization</li>
+            <li>SEO & Social Graph Optimization</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 07: TESTIMONIALS -->
+    <section class="editorial-section testimonials-section" id="testimonials">
+      <div class="section-header-bar">
+        <div class="section-number">07 // PRAISE</div>
+        <h2 class="section-title">Testimonials & Words</h2>
+        <span class="section-subtitle">What Professors, Mentors & Peers Say</span>
+      </div>
+
+      <div class="testimonial-carousel-container">
+        <div class="testimonial-track" id="testimonial-track">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-quote-text">
+              "Kanchana possesses an extraordinary balance of software rigor and visual sophistication. During our hackathon, she delivered a working machine learning pipeline and a magazine-grade interface in under 36 hours. A rare talent."
+            </p>
+            <div class="testimonial-author-block">
+              <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="author-info">
+                <span class="author-name">Dr. Rajesh Varma</span>
+                <span class="author-role">Professor & Head of Computer Science</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-quote-text">
+              "Working with Kanchana during our software engineering internship was an absolute delight. Her attention to edge cases, clean Git commits, and proactive communication made our sprint deliveries effortless."
+            </p>
+            <div class="testimonial-author-block">
+              <div class="author-avatar"><i class="fa-solid fa-code-branch"></i></div>
+              <div class="author-info">
+                <span class="author-name">Ananya Sharma</span>
+                <span class="author-role">Senior Engineering Mentor, Vanguard Tech</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-quote-text">
+              "Her ability to translate abstract product visions into performant, elegant code is exceptional. Kanchana brings calmness, rigorous problem solving, and genuine artistic sensibility to any software team."
+            </p>
+            <div class="testimonial-author-block">
+              <div class="author-avatar"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="author-info">
+                <span class="author-name">Karthik Sundaram</span>
+                <span class="author-role">Product Architect & Tech Lead</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="carousel-nav-controls">
+          <button class="carousel-arrow-btn" id="prev-test-btn" aria-label="Previous testimonial">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <div class="carousel-dots" id="carousel-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+          <button class="carousel-arrow-btn" id="next-test-btn" aria-label="Next testimonial">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 08: AI CHAT SECTION -->
+    <section class="editorial-section ai-chat-section" id="ai-chat">
+      <div class="section-header-bar">
+        <div class="section-number">08 // CONVERSATIONAL AI</div>
+        <h2 class="section-title">Ask Kanchana AI</h2>
+        <span class="section-subtitle">Interactive Persona &bull; Instant Knowledge Base</span>
+      </div>
+
+      <div class="ai-chat-card-wrapper">
+        <div class="chat-editorial-sidebar">
+          <div class="ai-avatar-badge">
+            <i class="fa-solid fa-sparkles"></i>
+          </div>
+          <h3 class="ai-sidebar-title">Kanchana Intelligence</h3>
+          <p class="ai-sidebar-desc">
+            An interactive conversational agent trained on Kanchana's background, technical proficiencies, project architectural decisions, and career aspirations.
+          </p>
+
+          <div class="quick-prompt-tags">
+            <span class="quick-tag-label">SUGGESTED QUERIES:</span>
+            <button class="quick-query-btn" data-query="What is Kanchana's primary tech stack?">"What is your tech stack?"</button>
+            <button class="quick-query-btn" data-query="Tell me about the Synthesis AI project.">"Tell me about Synthesis AI"</button>
+            <button class="quick-query-btn" data-query="Is Kanchana available for hiring or internships?">"Are you open for hiring?"</button>
+            <button class="quick-query-btn" data-query="How can I contact Kanchana?">"How can I get in touch?"</button>
+          </div>
+        </div>
+
+        <!-- Chat Container -->
+        <div class="chat-main-window">
+          <div class="chat-header-bar">
+            <div class="chat-status-indicator">
+              <span class="status-dot"></span>
+              <span>Kanchana AI Agent &bull; Online & Ready</span>
+            </div>
+            <button class="clear-chat-btn" id="clear-chat-btn" title="Clear conversation">
+              <i class="fa-solid fa-rotate-right"></i> Reset
+            </button>
+          </div>
+
+          <!-- Chat Messages Log -->
+          <div class="chat-messages-container" id="chat-messages" role="log" aria-live="polite">
+            <div class="chat-message bot-message">
+              <div class="msg-sender-tag">KANCHANA AI</div>
+              <div class="msg-bubble">
+                Greetings! I’m Kanchana’s interactive editorial AI assistant. You can ask me anything about her engineering capabilities, recent projects, education, or work availability. How may I assist you today?
+              </div>
+              <span class="msg-timestamp">Just now</span>
+            </div>
+          </div>
+
+          <!-- Chat Input Row -->
+          <form class="chat-input-form" id="chat-form">
+            <input type="text" id="chat-input-field" class="chat-text-input" placeholder="Ask a question about Kanchana's work, stack, or background..." autocomplete="off" required>
+            <button type="submit" class="chat-send-btn" aria-label="Send message">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 09: CONTACT -->
+    <section class="editorial-section contact-section" id="contact">
+      <div class="section-header-bar">
+        <div class="section-number">09 // INQUIRIES</div>
+        <h2 class="section-title">Let’s Collaborate</h2>
+        <span class="section-subtitle">Initiate a Conversation &bull; Open for Opportunities</span>
+      </div>
+
+      <div class="contact-editorial-grid">
+        
+        <!-- Left Contact Info -->
+        <div class="contact-info-panel">
+          <div class="contact-manifesto">
+            <span class="contact-label">START A CONVERSATION</span>
+            <h3 class="contact-headline">Looking for a high-craft engineer to elevate your team?</h3>
+            <p class="contact-body">
+              I am actively seeking software engineering internships, graduate roles, and visionary freelance collaborations. Reach out directly or fill out the inquiry form.
+            </p>
+          </div>
+
+          <!-- Direct Links -->
+          <div class="contact-methods-list">
+            
+            <div class="contact-method-card">
+              <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="method-details">
+                <span class="method-label">DIRECT EMAIL</span>
+                <a href="mailto:kanchana.dev@example.com" class="method-value" id="email-link">kanchana.dev@example.com</a>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" title="Copy email address">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-method-card">
+              <div class="method-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="method-details">
+                <span class="method-label">PROFESSIONAL NETWORK</span>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="method-value">linkedin.com/in/kanchana-r</a>
+              </div>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="external-icon-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+            <div class="contact-method-card">
+              <div class="method-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="method-details">
+                <span class="method-label">SOURCE CODE & REPOSITORIES</span>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="method-value">github.com/kanchana-r</a>
+              </div>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="external-icon-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+            <div class="contact-method-card">
+              <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="method-details">
+                <span class="method-label">BASE LOCATION</span>
+                <span class="method-value">Bangalore &bull; Chennai, India (Relocation / Remote Friendly)</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Contact Form -->
+        <div class="contact-form-panel">
+          <form class="editorial-contact-form" id="contact-form">
+            <h4 class="form-title">Send a Formal Inquiry</h4>
+            
+            <div class="form-group-row">
+              <div class="form-floating-field">
+                <input type="text" id="sender-name" name="name" class="form-input" placeholder=" " required>
+                <label for="sender-name" class="floating-label">Your Name / Organization *</label>
+              </div>
+
+              <div class="form-floating-field">
+                <input type="email" id="sender-email" name="email" class="form-input" placeholder=" " required>
+                <label for="sender-email" class="floating-label">Email Address *</label>
+              </div>
+            </div>
+
+            <div class="form-floating-field">
+              <input type="text" id="sender-subject" name="subject" class="form-input" placeholder=" " required>
+              <label for="sender-subject" class="floating-label">Subject / Scope of Inquiry *</label>
+            </div>
+
+            <div class="form-interest-chips">
+              <span class="chips-label">Inquiry Focus:</span>
+              <label class="chip-option">
+                <input type="radio" name="inquiry_type" value="Full-Time / Internship" checked>
+                <span>Internship / Full-time</span>
+              </label>
+              <label class="chip-option">
+                <input type="radio" name="inquiry_type" value="Project Collaboration">
+                <span>Project / Freelance</span>
+              </label>
+              <label class="chip-option">
+                <input type="radio" name="inquiry_type" value="Saying Hello">
+                <span>General Connection</span>
+              </label>
+            </div>
+
+            <div class="form-floating-field">
+              <textarea id="sender-message" name="message" class="form-textarea" rows="5" placeholder=" " required></textarea>
+              <label for="sender-message" class="floating-label">Your Message Details *</label>
+            </div>
+
+            <button type="submit" class="editorial-btn primary-btn submit-btn" id="contact-submit-btn">
+              <span>Transmit Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div class="editorial-modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+      <div class="modal-scroll-body" id="modal-body-content">
+        <!-- Dynamic content injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div class="editorial-toast" id="editorial-toast" role="alert" aria-live="assertive">
+    <div class="toast-icon"><i class="fa-solid fa-check"></i></div>
+    <div class="toast-text" id="toast-text">Action completed successfully.</div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="editorial-footer">
+    <div class="footer-top-banner">
+      <div class="footer-branding">
+        <h2 class="footer-huge-name">KANCHANA</h2>
+        <span class="footer-edition-tag">DESIGN &bull; CODE &bull; ARCHITECTURE &bull; 2026</span>
+      </div>
+      <div class="footer-back-top">
+        <a href="#hero" class="back-top-btn" aria-label="Back to top of page">
+          <i class="fa-solid fa-arrow-up"></i>
+          <span>TOP OF PAGE</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <span class="footer-col-title">NAVIGATION</span>
+        <ul class="footer-links">
+          <li><a href="#hero">Home / Overview</a></li>
+          <li><a href="#about">About & Manifesto</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#education">Education & Timeline</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-title">PORTFOLIO</span>
+        <ul class="footer-links">
+          <li><a href="#projects">Selected Works</a></li>
+          <li><a href="#experience">Trajectory & Honors</a></li>
+          <li><a href="#services">Services & Expertise</a></li>
+          <li><a href="#ai-chat">Ask Kanchana AI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-title">SOCIAL & CONNECT</span>
+        <ul class="footer-links">
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+          <li><a href="mailto:kanchana.dev@example.com"><i class="fa-solid fa-envelope"></i> kanchana.dev@example.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-status">
+        <span class="footer-col-title">AVAILABILITY</span>
+        <p class="footer-status-text">
+          <span class="status-dot"></span> Currently accepting new graduate, internship, and project opportunities for 2026.
+        </p>
+        <div class="footer-time-display">
+          <span>Bangalore, India: </span>
+          <strong id="footer-live-clock">12:30 PM IST</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <p class="copyright-text">
+        &copy; 2026 Kanchana R. All Rights Reserved. Crafted with deliberate engineering and refined editorial aesthetics.
+      </p>
+      <div class="bottom-legal-tags">
+        <span>SEMANTIC HTML5</span>
+        <span>VANILLA CSS & JS</span>
+        <span>MODERN LUXURY UI</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
